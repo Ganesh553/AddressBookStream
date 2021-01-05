@@ -51,7 +51,6 @@ public class AddressBookMain {
                     System.out.println("Enter the firstName of the Person that you wish to edit");
                     String editName=sc.next();
                     ab.editingPerson(editName);
-                    break;
                 case 3: System.out.println("Deleting Person");
                     System.out.println("Enter the firstName of the person that you wish to delete");
                     String deleteName=sc.next();
@@ -90,7 +89,6 @@ public class AddressBookMain {
                             ab.getContactByCity(getByCity);
                             break;
                     }
-
                 default: System.out.println("your not selected between 1 to 10");
             }
             System.out.println("Do you wish to continue y/n");
@@ -104,6 +102,5 @@ public class AddressBookMain {
             }
         }
     }
-
 }
-
+}
