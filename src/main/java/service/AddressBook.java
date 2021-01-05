@@ -138,4 +138,23 @@ public class AddressBook {
             }
         }
     }
+    public void searchPerson(String searchName) {
+        if(al.isEmpty())
+            System.out.println("No Address is Present");
+        else {
+            for(Person obj:al) {
+                if(obj.getFirstName().equals(searchName)) {
+                    System.out.println("Select 1. For State");
+                    System.out.println("Select 2. For City");
+                    int select = sc.nextInt();
+                    switch(select) {
+                        case 1: System.out.println(obj.getState());
+                            break;
+                        case 2: System.out.println(obj.getCity());
+                            break;
+                    }
+                }
+            }
+        }
+    }
 }
