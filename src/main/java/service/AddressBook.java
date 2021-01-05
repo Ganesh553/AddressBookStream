@@ -115,7 +115,6 @@ public class AddressBook {
                     System.out.println("There is no duplicate, Continue..");
                     break;
                 }
-
             }
         }
     }
