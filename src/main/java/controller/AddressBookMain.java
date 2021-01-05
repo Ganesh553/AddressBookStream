@@ -51,7 +51,7 @@ public class AddressBookMain {
                     System.out.println("Enter the firstName of the Person that you wish to edit");
                     String editName=sc.next();
                     ab.editingPerson(editName);
-                    break;
+                    break;        
                 case 3: System.out.println("Deleting Person");
                     System.out.println("Enter the firstName of the person that you wish to delete");
                     String deleteName=sc.next();
@@ -74,6 +74,9 @@ public class AddressBookMain {
                 case 8: System.out.println("Enter the Person");
                     String searchName = sc.next();
                     ab.searchPerson(searchName);
+                    break;
+                case 9: System.out.println("Sorting by First Name");
+                    ab.sortingByFirstName();
                     break;
                 default: System.out.println("your not selected between 1 to 10");
             }

@@ -3,7 +3,12 @@ package service;
 import model.Person;
 
 import java.util.ArrayList;
+import java.util.Comparator;
+import java.util.List;
 import java.util.Scanner;
+import java.util.stream.Collectors;
+import java.util.Scanner;
+
 
 public class AddressBook {
 
@@ -154,6 +159,31 @@ public class AddressBook {
                             break;
                     }
                 }
+            }
+        }
+    }
+    public void sortingByFirstName() {
+        if(al.isEmpty())
+            System.out.println("No Address is Present");
+        else {
+            System.out.println("Sorting an person object,Select 1:FirstName 2:State 3:City");
+            int select = sc.nextInt();
+            switch(select) {
+                case 1: List<Person> sortedListfName = al.stream()
+                        .sorted(Comparator.comparing(Person::getFirstName))
+                        .collect(Collectors.toList());
+                    sortedListfName.forEach(System.out::println);
+                    break;
+                case 2: List<Person> sortedListState = al.stream()
+                        .sorted(Comparator.comparing(Person::getState))
+                        .collect(Collectors.toList());
+                    sortedListState.forEach(System.out::println);
+                    break;
+                case 3: List<Person> sortedListCity = al.stream()
+                        .sorted(Comparator.comparing(Person::getCity))
+                        .collect(Collectors.toList());
+                    sortedListCity.forEach(System.out::println);
+                    break;
             }
         }
     }
