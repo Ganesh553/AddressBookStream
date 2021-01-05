@@ -1,6 +1,7 @@
 package controller;
 
 import model.Person;
+import org.junit.Test;
 import service.AddressBook;
 
 import java.util.Scanner;
@@ -66,4 +67,3 @@ public class AddressBookMain {
     }
 
 }
-
