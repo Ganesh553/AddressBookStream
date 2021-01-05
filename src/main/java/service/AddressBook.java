@@ -13,7 +13,6 @@ public class AddressBook {
     public void addingNewPerson(Person obj) {
         al.add(obj);
     }
-
     public void editingPerson(String editName) {
         boolean flag = true;
         for (Person obj : al) {
@@ -89,5 +88,4 @@ public class AddressBook {
             }
         }
     }
-
 }
