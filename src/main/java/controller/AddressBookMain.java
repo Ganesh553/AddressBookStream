@@ -60,6 +60,9 @@ public class AddressBookMain {
                 case 4: System.out.println("Displaying all the contacts ");
                     ab.display();
                     break;
+                case 5: System.out.println("Enter the First name to check duplicate");
+                    ab.duplicatEntry();
+                    break;
                 default: System.out.println("your not selected between 1 to 10");
             }
             System.out.println("Do you wish to continue y/n");

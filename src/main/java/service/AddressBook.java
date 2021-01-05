@@ -99,4 +99,25 @@ public class AddressBook {
             }
         }
     }
+    public void duplicatEntry() {
+        if(al.isEmpty())
+            System.out.println("No element in Address Book");
+        else {
+            for(Person obj : al) {
+                System.out.println("Enter First name");
+                String firstName = sc.next();
+                if (obj.getFirstName().equals(firstName))
+                {
+                    System.out.println("Dublicate entry is not allowed");
+                    break;
+                }
+                else {
+                    System.out.println("There is no duplicate, Continue..");
+                    break;
+                }
+
+            }
+
+        }
+    }
 }
