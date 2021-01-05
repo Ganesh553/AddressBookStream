@@ -52,6 +52,11 @@ public class AddressBookMain {
                     String editName=sc.next();
                     ab.editingPerson(editName);
                     break;
+                case 3: System.out.println("Deleting Person");
+                    System.out.println("Enter the firstName of the person that you wish to delete");
+                    String deleteName=sc.next();
+                    ab.deletingPerson(deleteName);
+                    break;
                 case 4: System.out.println("Displaying all the contacts ");
                     ab.display();
                     break;
@@ -70,4 +75,4 @@ public class AddressBookMain {
     }
 
 }
-
+}
