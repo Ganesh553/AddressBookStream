@@ -57,6 +57,9 @@ public class AddressBookMain {
                     String deleteName=sc.next();
                     ab.deletingPerson(deleteName);
                     break;
+                case 4: System.out.println("Displaying all the contacts ");
+                    ab.display();
+                    break;
                 default: System.out.println("your not selected between 1 to 10");
             }
             System.out.println("Do you wish to continue y/n");
@@ -70,4 +73,6 @@ public class AddressBookMain {
             }
         }
     }
+
+}
 }
