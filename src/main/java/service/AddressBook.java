@@ -74,4 +74,18 @@ public class AddressBook {
             }
         }
     }
+    public void deletingPerson(String FirstName) {
+        if(al.isEmpty())
+            System.out.println("No Address Present");
+        else {
+            for(Person obj:al) {
+                if(obj.getFirstName().equals(FirstName))
+                {
+                    al.remove(obj);
+                    System.out.println("Deleted is Successful");
+                    break;
+                }
+            }
+        }
+    }
 }
