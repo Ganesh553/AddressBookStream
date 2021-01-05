@@ -51,12 +51,7 @@ public class AddressBookMain {
                     System.out.println("Enter the firstName of the Person that you wish to edit");
                     String editName=sc.next();
                     ab.editingPerson(editName);
-                    break;
-                case 2: System.out.println("Editing Person");
-                    System.out.println("Enter the firstName of the Person that you wish to edit");
-                    String editName=sc.next();
-                    ab.editingPerson(editName);
-                    break;
+                    break;        
                 case 3: System.out.println("Deleting Person");
                     System.out.println("Enter the firstName of the person that you wish to delete");
                     String deleteName=sc.next();
@@ -98,4 +93,4 @@ public class AddressBookMain {
     }
 
 }
-
+}
