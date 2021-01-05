@@ -9,7 +9,6 @@ import java.util.Scanner;
 import java.util.stream.Collectors;
 import java.util.Scanner;
 
-
 public class AddressBook {
 
     ArrayList<Person> al = new ArrayList<Person>();
@@ -184,6 +183,31 @@ public class AddressBook {
                         .collect(Collectors.toList());
                     sortedListCity.forEach(System.out::println);
                     break;
+            }
+        }
+    }
+    public void getContactByState(String getByState) {
+        if(al.isEmpty())
+            System.out.println("No Address is Present");
+        else {
+            for(Person obj:al) {
+                if(obj.getState().equals(getByState))
+                    System.out.println(obj.getPhoneNumber());
+                else
+                    System.out.println("No such State is Present");
+            }
+        }
+    }
+
+    public void getContactByCity(String getByCity) {
+        if(al.isEmpty())
+            System.out.println("No Address is Present");
+        else {
+            for(Person obj:al) {
+                if(obj.getCity().equals(getByCity))
+                    System.out.println(obj.getPhoneNumber());
+                else
+                    System.out.println("No such City is present");
             }
         }
     }

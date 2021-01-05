@@ -51,7 +51,6 @@ public class AddressBookMain {
                     System.out.println("Enter the firstName of the Person that you wish to edit");
                     String editName=sc.next();
                     ab.editingPerson(editName);
-                    break;        
                 case 3: System.out.println("Deleting Person");
                     System.out.println("Enter the firstName of the person that you wish to delete");
                     String deleteName=sc.next();
@@ -78,6 +77,18 @@ public class AddressBookMain {
                 case 9: System.out.println("Sorting by First Name");
                     ab.sortingByFirstName();
                     break;
+                case 10: System.out.println("Get contact number press 1. State and 2. City");
+                    int select = sc.nextInt();
+                    switch(select) {
+                        case 1: System.out.println("Enter State to get Contact number");
+                            String getByState = sc.next();
+                            ab.getContactByState(getByState);
+                            break;
+                        case 2: System.out.println("Enter City to get Contact number");
+                            String getByCity = sc.next();
+                            ab.getContactByCity(getByCity);
+                            break;
+                    }
                 default: System.out.println("your not selected between 1 to 10");
             }
             System.out.println("Do you wish to continue y/n");
@@ -91,6 +102,5 @@ public class AddressBookMain {
             }
         }
     }
-
 }
 }
