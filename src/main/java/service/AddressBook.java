@@ -115,9 +115,17 @@ public class AddressBook {
                     System.out.println("There is no duplicate, Continue..");
                     break;
                 }
-
             }
-
+        }
+    }
+    public void searchState(String searchState) {
+        if(al.isEmpty())
+            System.out.println("No Address Present");
+        else {
+            for(Person obj:al) {
+                if(obj.getState().equals(searchState))
+                    System.out.println(obj.getFirstName());
+            }
         }
     }
 }

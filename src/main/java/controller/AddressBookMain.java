@@ -63,6 +63,10 @@ public class AddressBookMain {
                 case 5: System.out.println("Enter the First name to check duplicate");
                     ab.duplicatEntry();
                     break;
+                case 6: System.out.println("Enter the State to see the person");
+                    String searchState=sc.next();
+                    ab.searchState(searchState);
+                    break;
                 default: System.out.println("your not selected between 1 to 10");
             }
             System.out.println("Do you wish to continue y/n");
