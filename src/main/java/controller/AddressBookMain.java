@@ -67,6 +67,10 @@ public class AddressBookMain {
                     String searchState=sc.next();
                     ab.searchState(searchState);
                     break;
+                case 7: System.out.println("Enter the City to see the person");
+                    String searchCity=sc.next();
+                    ab.searchCity(searchCity);
+                    break;
                 default: System.out.println("your not selected between 1 to 10");
             }
             System.out.println("Do you wish to continue y/n");
